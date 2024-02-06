@@ -1,0 +1,110 @@
+.nav-wrapper {
+    background-color: var(--primary-color);
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
+.nav-container {
+    padding: 1.5rem 1rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.nav-logo {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-right {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 0.9rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.nav-menu>span {
+    cursor: pointer;
+}
+
+.fund-button {
+    color: var(--dark-bg);
+    background-color: var(--third-color);
+    padding: 1rem 1.6rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 50px;
+}
+
+.nav-mobile-container {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .nav-container {
+        display: none;
+    }
+
+    .nav-mobile-container {
+        display: block;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        position: relative;
+        background-color: var(--primary-color);
+    }
+
+    .nav-mobile-container>:nth-child(1) {
+        font-weight: bold;
+    }
+
+    .nav-mobile-menu {
+        position: fixed;
+        top: 3.9rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.2rem;
+        z-index: 999;
+        height: calc(100vh - 3.9rem);
+        background-color: var(--primary-color);
+        transform: translate(-150%);
+        transition: all 300ms ease-in-out;
+    }
+    
+    .nav-mobile-menu span {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .mobile-funded-button {
+        width: 100%;
+        background-color: var(--third-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 1rem 0rem;
+        border-radius: 50px;
+        color: var(--dark-bg);
+    }
+}
