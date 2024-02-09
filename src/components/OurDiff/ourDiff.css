@@ -33,6 +33,7 @@
 .od-feature {
   flex: 1;
   background-color: white;
+  box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -52,7 +53,7 @@
 }
 
 @media (max-width:590px) {
-  .od-features {
+  .od-feature {
     width: 80%;
     margin: auto;
   }

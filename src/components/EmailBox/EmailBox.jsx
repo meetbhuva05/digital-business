@@ -19,6 +19,9 @@ function EmailBox() {
           duration: 1
         }
       }}
+      viewport={{
+        once: true
+      }}
     >
       <motion.div
         variants={containerVariants(0.6)}

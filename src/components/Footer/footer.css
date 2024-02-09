@@ -1,0 +1,51 @@
+.footer-wrapper {
+  background-color: var(--primary-color);
+}
+
+.footer-wrapper .container {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+}
+
+.footer-container .title {
+  color: white;
+}
+
+.footer-container .emailBox {
+  max-width: 36rem;
+}
+
+.footer-container hr {
+  border-color: var(--border-color-light);
+  width: 100%;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-menu span {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 990px) {
+  .footer-menu {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+}
